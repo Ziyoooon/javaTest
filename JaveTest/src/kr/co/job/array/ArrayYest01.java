@@ -11,7 +11,7 @@ public class ArrayYest01 {
 
 //			score[0] = 55;//~ score[4]=11
 //		배열에 랜덤으로 1~100까지 수를 대입하기.
-		int[] score = new int[100];
+		int[] score = new int[100];//100개를 출력
 
 //			score[0] = (int)(Math.random()*100)*1;
 //			score[1] = (int)(Math.random()*100)*1;
@@ -19,8 +19,8 @@ public class ArrayYest01 {
 //			score[3] = (int)(Math.random()*100)*1;
 //			score[4] = (int)(Math.random()*100)*1;
 
-		for (int i = 0; i < score.length; i++) {
-			score[i] = (int) (Math.random() * 100) + 1;
+		for (int i = 0; i < score.length; i++) {//i=(i+3)
+			score[i] = (int) (Math.random() * 6) + 15;//15부터 시작해서 총 6개의 숫자가 나온다. 15,16,17,18,19,20
 		}
 		for (int i = 0; i < score.length; i++) {
 			System.out.println("score[" + i + "]=" + score[i]);
